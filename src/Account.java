@@ -62,17 +62,17 @@ public class Account {
 
     @Override
     public String toString() {
-		String accountStr = " Nome do dono da conta: " + this.owner.getName()+ "\n" +
-     " Número da conta: " + this.getID()+ "\n" +
-     " Saldo atual: " + this.getBalance()+ "\n" +
-     " Limite: " + this.getLimit() + "\n\n" ;
+		String accountStr = " Nome do dono da conta: " + this.owner.name+ "\n" +
+     " Número da conta: " + this.ID+ "\n" +
+     " Saldo atual: " + this.balance+ "\n" +
+     " Limite: " + this.limit + "\n\n" ;
 						 
 		return accountStr;
 	}
     @Override 
     public boolean equals(Object obj){
         Account actcomp = (Account) obj;
-        return actcomp.getID() == this.getID();
+        return actcomp.ID == this.ID;
     }
     
 

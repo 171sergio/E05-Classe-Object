@@ -16,19 +16,19 @@ public class Individual extends Client {
     public String toString(){
        String individualStr;
        individualStr =  
-       " CPF: " + this.getCPF()+ "\n" +
-       " Nome: " + this.getName()+ "\n" +
-       " Endereço: " + this.getAdress()+ "\n" +
-       " Idade: " + this.getAge()+ "\n" +
-       " Sexo: " + this.getSex()+ "\n" +
-       " Data de criação: " + this.getDate() + "\n\n";
+       " CPF: " + this.CPF+ "\n" +
+       " Nome: " + this.name+ "\n" +
+       " Endereço: " + this.adress+ "\n" +
+       " Idade: " + this.age+ "\n" +
+       " Sexo: " + this.sex+ "\n" +
+       " Data de criação: " + this.date + "\n\n";
        return individualStr;
     }
 
     @Override
     public boolean equals(Object obj){
         Individual pFisicaComparada = (Individual) obj;
-        return pFisicaComparada.getCPF().equals(this.CPF);
+        return pFisicaComparada.CPF.equals(this.CPF);
     }
 
     @Override

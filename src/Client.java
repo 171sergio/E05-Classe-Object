@@ -1,9 +1,9 @@
 import java.util.Date;
 
 class Client{
-    private String name;
-    private String adress;
-    private Date date;
+    protected String name;
+    protected String adress;
+    protected Date date;
 
 
     public Client(String adress, String name) {

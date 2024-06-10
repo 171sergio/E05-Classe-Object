@@ -16,18 +16,18 @@ public class JuridicalPerson extends Client{
     @Override
     public String toString(){
         String jdStr;
-        jdStr = " CNPJ: " + this.getCNPJ() +
-        " Nome: " + this.getName() +
-        " Endereço: " + this.getAdress()+
+        jdStr = " CNPJ: " + this.CNPJ +
+        " Nome: " + this.name +
+        " Endereço: " + this.adress+
         " Número de funcionários: " + this.numFuncionarios+
-        " Setor: " + this.getSector()+
-        " Data de criação: " + this.getDate();
+        " Setor: " + this.sector+
+        " Data de criação: " + this.date;
         return jdStr;
     }
     @Override
     public boolean equals(Object obj){
         JuridicalPerson pJcomp = (JuridicalPerson) obj;
-        return pJcomp.getCNPJ().equals(this.CNPJ);
+        return pJcomp.CNPJ.equals(this.CNPJ);
     }
     @Override
     public int hashCode() {
