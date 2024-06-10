@@ -3,11 +3,11 @@ import java.util.Date;
 
 public class Operation {
 
-    private Date date;
+    protected Date date;
 
-    private char type;
+    protected char type;
 
-    private double amount;
+    protected double amount;
 
     public static int totOperations=0;
 
